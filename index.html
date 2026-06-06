@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo Main y Aside</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
- 
+
 </head>
 
 <body>
@@ -14,6 +16,39 @@
     <header>
         <h1>Mi Sitio Web</h1>
     </header>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"></a>
+    <img src="./img/estrella.jpg" alt="star" style="width:35px;" class="rounded-pill">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Quiénes somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sucursales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>  
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Productos</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Ferretería</a></li>
+            <li><a class="dropdown-item" href="#">Construcción</a></li>
+            <li><a class="dropdown-item" href="#">Herramientas</a></li>
+            <li><a class="dropdown-item" href="#">Tutoriales</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 
     <div class="contenedor">
 
@@ -32,11 +67,11 @@
                 El elemento main ocupa más espacio porque tiene
                 flex: 3.
             </p>
-        <div>
-            <img src="./img/html 5.webp" alt="html_5">
-        </div>
+            <div>
+                <img src="./img/html 5.webp" alt="html_5">
+            </div>
         </main>
-       
+
         <aside>
             <h2 class=" barra-lateral">Barra Lateral</h2>
 
@@ -50,25 +85,26 @@
                 <li>Enlace 3</li>
             </ul>
         </aside>
-   
-        
+
+
     </div>
-        <section>
-                 <h2>Otra Sección</h2>
-                 <article class=articulo>Aqui esta un articulo</article>
-                 <p>Aqui se escribe el contenido del articulo</p>
+    <section class="seccion-principal">
+        <h2>Otra Sección</h2>
+        <article class=articulo>Aqui esta un articulo</article>
+        <p>Aqui se escribe el contenido del articulo</p>
 
-                 <article id="destacado">Otro articulo destacado</article>
-                <p>Contenido del segundo articulo</p>
+        <article id="destacado">Otro articulo destacado</article>
+        <p>Contenido del segundo articulo</p>
 
-                <article class="articulo">Un tercer articulo</article>
-                <p>Contenido del tercer articulo</p>
-        </section>
-    
+        <article class="articulo">Un tercer articulo</article>
+        <p>Contenido del tercer articulo</p>
+    </section>
+    </body>
     <footer>
-        <p>Pie de página</p>
+        <p>Sitio web creado por <kbd>CHOCOLAT</kbd></p>
     </footer>
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>
